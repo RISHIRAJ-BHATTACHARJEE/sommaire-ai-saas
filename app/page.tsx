@@ -1,9 +1,22 @@
-import { Button } from "@/components/ui/button";
+import BgGradient from "@/components/common/bgGradient";
+import CTASection from "@/components/home/CTASection";
+import DemoSection from "@/components/home/DemoSection";
+import HeroSection from "@/components/home/HeroSection";
+import HowItWorksSection from "@/components/home/HowItWorksSection";
+import PricingSection from "@/components/home/PricingSection";
 
 export default function Home() {
   return (
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <Button variant="outline">Shadcn Button</Button>
+    <div className="relative w-full">
+      <BgGradient>
+        <div className="flex flex-col gap-12">
+          <HeroSection />
+          <DemoSection />
+          <HowItWorksSection />
+          <PricingSection />
+          <CTASection />
+        </div>
+      </BgGradient>
     </div>
   );
 }
