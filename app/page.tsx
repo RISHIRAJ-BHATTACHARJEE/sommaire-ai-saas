@@ -8,15 +8,14 @@ import PricingSection from "@/components/home/PricingSection";
 export default function Home() {
   return (
     <div className="relative w-full">
-      <BgGradient>
-        <div className="flex flex-col gap-12">
-          <HeroSection />
-          <DemoSection />
-          <HowItWorksSection />
-          <PricingSection />
-          <CTASection />
-        </div>
-      </BgGradient>
+      <BgGradient className="w-full" />
+      <div className="flex flex-col gap-12">
+        <HeroSection />
+        <DemoSection />
+        <HowItWorksSection />
+        <PricingSection />
+        <CTASection />
+      </div>
     </div>
   );
 }
